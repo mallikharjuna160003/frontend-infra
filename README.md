@@ -29,7 +29,7 @@ REACT_APP_API_URL="http://app-lb-638139560.us-west-2.elb.amazonaws.com"
 ```
 
 # Recommended for Production architecture
-
+We need to register Route53 domain or any public hosted domain names attaching to cloudfront endpoint. It is more secure and reliable.
 ![1_j-Px5fIzUWj42Qe4tAtOag](https://github.com/user-attachments/assets/a1f070d8-f9d9-4d3e-ab9e-f1fad3c55671)
 
   
