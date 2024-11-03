@@ -27,7 +27,11 @@ aws s3api put-bucket-versioning --bucket frontend-s3-bucket-123456 --versioning-
 ```sh
 REACT_APP_API_URL="http://app-lb-638139560.us-west-2.elb.amazonaws.com"
 ```
-  
+
+# Recommended for Production architecture
+
+![1_j-Px5fIzUWj42Qe4tAtOag](https://github.com/user-attachments/assets/a1f070d8-f9d9-4d3e-ab9e-f1fad3c55671)
+
   
   
   
