@@ -1,0 +1,7 @@
+.terraform.lock.hcl
+terraform.tfstate
+terraform.tfstate.backup
+help.sh
+deploy2.sh
+deploy.sh
+.terraform
