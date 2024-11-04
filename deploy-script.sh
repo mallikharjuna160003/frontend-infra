@@ -25,19 +25,19 @@ if [ ! -d "build" ]; then
     exit 1
 fi
 
-# Set up Terraform backend configuration in infra path
-echo "Configuring Terraform backend..."
-cat > "$INFRA_PATH/backend.tf" <<EOF
-terraform {
-  backend "s3" {
-    bucket = "${STATE_BUCKET}"
-    key    = "frontend-infrastructure/terraform.tfstate"
-    region = "${REGION}"
-    dynamodb_table = "${DYNAMODB_TABLE}"
-    encrypt = true
-  }
-}
-EOF
+# # Set up Terraform backend configuration in infra path
+# echo "Configuring Terraform backend..."
+# cat > "$INFRA_PATH/backend.tf" <<EOF
+# terraform {
+#   backend "s3" {
+#     bucket = "${STATE_BUCKET}"
+#     key    = "frontend-infrastructure/terraform.tfstate"
+#     region = "${REGION}"
+#     dynamodb_table = "${DYNAMODB_TABLE}"
+#     encrypt = true
+#   }
+# }
+# EOF
 
 # Deploy infrastructure using Terraform
 echo "Deploying infrastructure..."
