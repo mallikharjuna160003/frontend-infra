@@ -1,7 +1,3 @@
-provider "aws" {
-  alias  = "us-west-2"
-  region = "us-west-2"
-}
 terraform {
   required_providers {
     aws = {
@@ -9,4 +5,7 @@ terraform {
       version = "~> 4.0"  // Specify the version as needed
     }
   }
+}
+provider "aws" {
+  region = "us-west-2"
 }
