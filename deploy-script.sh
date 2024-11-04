@@ -2,7 +2,7 @@
 
 # Set paths
 FRONTEND_PATH="frontend"
-INFRA_PATH="    frontend-infra"
+INFRA_PATH="frontend-infra"
 ALB_BACKEND="app-lb-638139560.us-west-2.elb.amazonaws.com"
 STATE_BUCKET="frontend-s3-bucket-123456"
 DYNAMODB_TABLE="frontend-lockfile"
