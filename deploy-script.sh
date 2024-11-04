@@ -2,7 +2,7 @@
 
 # Set paths
 FRONTEND_PATH="frontend"
-INFRA_PATH="frontend-infra"
+INFRA_PATH=".."
 ALB_BACKEND="app-lb-638139560.us-west-2.elb.amazonaws.com"
 STATE_BUCKET="frontend-s3-bucket-123456"
 DYNAMODB_TABLE="frontend-lockfile"
@@ -18,6 +18,7 @@ echo "REACT_APP_API_URL=${ALB_BACKEND}" > $FRONTEND_PATH/.env
 echo "Building frontend..."
 cd $FRONTEND_PATH
 export NODE_OPTIONS=--openssl-legacy-provider
+npm install
 npm run build
 
 if [ ! -d "build" ]; then
